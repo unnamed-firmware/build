@@ -1,4 +1,4 @@
--#!/bin/bash
+#!/bin/bash
 
 echo
 echo "AOSP 15.0 Buildbot - adapted from ponces' script by chardidathing"
