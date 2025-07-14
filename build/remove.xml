@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remove-project name="TrebleDroid/vendor_hardware_overlay" />
-  <remove-project name="TrebleDroid/vendor_interfaces" />
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
   <remove-project name="device/generic/trusty" />

@@ -17,6 +17,7 @@ initRepos() {
     echo
 
     echo "--> Preparing local manifest"
+    rm -rf .repo/local_manifests
     mkdir -p .repo/local_manifests
     cp $BUILD_ROOT/build/default.xml .repo/local_manifests/default.xml
     cp $BUILD_ROOT/build/remove.xml .repo/local_manifests/remove.xml
