@@ -8,7 +8,7 @@ set -e
 export TD_BRANCH="android-15.0"
 
 [ -z "$OUTPUT_DIR" ] && OUTPUT_DIR="$PWD/output"
-[ -z "$BUILD_ROOT" ] && BUILD_ROOT="$PWD/treble_aosp"
+[ -z "$BUILD_ROOT" ] && BUILD_ROOT="$PWD/unnamed_aosp"
 
 initRepos() {
     echo "--> Getting latest upstream version"

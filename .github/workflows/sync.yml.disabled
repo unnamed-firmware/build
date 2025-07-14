@@ -32,14 +32,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: ./aosp/treble_aosp
+          path: ./aosp/unnamed_aosp
 
       - name: Sync with TrebleDroid
         run: |
-          ./treble_aosp/sync.sh
+          ./unnamed_aosp/sync.sh
           unzip ${{ github.workspace }}/output/patches.zip -d ${{ github.workspace }}/output
-          rm -rf ${{ github.workspace }}/aosp/treble_aosp/patches/trebledroid
-          cp -r ${{ github.workspace }}/output/patches ${{ github.workspace }}/aosp/treble_aosp/patches/trebledroid
+          rm -rf ${{ github.workspace }}/aosp/unnamed_aosp/patches/trebledroid
+          cp -r ${{ github.workspace }}/output/patches ${{ github.workspace }}/aosp/unnamed_aosp/patches/trebledroid
         env:
           OUTPUT_DIR: ${{ github.workspace }}/output
         working-directory: ${{ github.workspace }}/aosp
@@ -51,7 +51,7 @@ jobs:
           git add ./patches/trebledroid
           git commit -m "feat(patches): sync with latest sources of TrebleDroid"
           git push -u origin
-        working-directory: ${{ github.workspace }}/aosp/treble_aosp
+        working-directory: ${{ github.workspace }}/aosp/unnamed_aosp
 
       - name: Upload Patches
         uses: actions/upload-artifact@v4

@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: ./aosp/treble_aosp
+          path: ./aosp/unnamed_aosp
 
       - name: Start SSH Agent
         uses: webfactory/ssh-agent@v0.9.0
@@ -44,7 +44,7 @@ jobs:
           ssh-private-key: ${{ secrets.VENDOR_PONCES_PRIV_KEY }}
 
       - name: Build ROM
-        run: ./treble_aosp/build.sh
+        run: ./unnamed_aosp/build.sh
         env:
           OUTPUT_DIR: ${{ github.workspace }}/output
         working-directory: ${{ github.workspace }}/aosp
@@ -53,7 +53,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ota
-          path: ${{ github.workspace }}/aosp/treble_aosp/ota.json
+          path: ${{ github.workspace }}/aosp/unnamed_aosp/ota.json
 
       - name: Upload ROM
         uses: softprops/action-gh-release@v2

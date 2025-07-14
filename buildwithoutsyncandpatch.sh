@@ -10,7 +10,7 @@ set -e
 export BUILD_NUMBER="$(date +%y%m%d)"
 
 [ -z "$OUTPUT_DIR" ] && OUTPUT_DIR="$PWD/output"
-[ -z "$BUILD_ROOT" ] && BUILD_ROOT="$PWD/treble_aosp"
+[ -z "$BUILD_ROOT" ] && BUILD_ROOT="$PWD/unnamed_aosp"
 
 initRepos() {
     echo "--> Initializing workspace"
@@ -106,7 +106,7 @@ generateOta() {
             [[ "$filename" == *"-vanilla"* ]] && variant="v" || variant="g"
             name="treble_arm64_b${variant}N"
             size=$(wc -c $file | awk '{print $1}')
-            url="https://github.com/ponces/treble_aosp/releases/download/$version/$filename"
+            url="https://github.com/unnamed-firmware/unnamed_aosp/releases/download/$version/$filename"
             json="${json} {\"name\": \"$name\",\"size\": \"$size\",\"url\": \"$url\"},"
         done
         json="${json%?}]}"

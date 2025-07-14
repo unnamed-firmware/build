@@ -9,7 +9,7 @@ set -e
 export BUILD_NUMBER="$(date +%y%m%d)"
 
 [ -z "$OUTPUT_DIR" ] && OUTPUT_DIR="$PWD/output"
-[ -z "$BUILD_ROOT" ] && BUILD_ROOT="$PWD/treble_aosp"
+[ -z "$BUILD_ROOT" ] && BUILD_ROOT="$PWD/unnamed_aosp"
 
 initRepos() {
     echo "--> Initializing workspace"

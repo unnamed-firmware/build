@@ -28,7 +28,7 @@ RUN curl -sfL https://packagecloud.io/install/repositories/github/git-lfs/script
 USER ubuntu
 WORKDIR /work
 
-COPY --chown=ubuntu:ubuntu . /work/treble_aosp
+COPY --chown=ubuntu:ubuntu . /work/unnamed_aosp
 
 RUN git lfs install && \
     git config --global alias.pushfwl "push --force-with-lease" && \
@@ -41,8 +41,8 @@ RUN git lfs install && \
 
 FROM base AS treblebuild
 
-ENTRYPOINT [ "/work/treble_aosp/build.sh" ]
+ENTRYPOINT [ "/work/unnamed_aosp/build.sh" ]
 
 FROM base AS treblesync
 
-ENTRYPOINT [ "/work/treble_aosp/sync.sh" ]
+ENTRYPOINT [ "/work/unnamed_aosp/sync.sh" ]
