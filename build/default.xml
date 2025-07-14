@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="azure" fetch="https://ponces26.visualstudio.com/DefaultCollection/vendor_gapps/_git" />
   <remote name="github" fetch="https://github.com" />
   <remote name="private" fetch="ssh://git@github.com" />
 
