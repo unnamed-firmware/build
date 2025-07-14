@@ -1,0 +1,11 @@
+{
+  "version": "v2025.07.15",
+  "date": "1752509087",
+  "variants": [
+    {
+      "name": "treble_arm64_bvN",
+      "size": "0",
+      "url": "https://github.com/unnamed-firmware/releases/download/tag/file.img.xz"
+    }
+  ]
+}
