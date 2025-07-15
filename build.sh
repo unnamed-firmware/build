@@ -39,9 +39,9 @@ applyPatches() {
     bash $BUILD_ROOT/patch.sh $BUILD_ROOT personal
     echo
 
-    echo "--> Applying unnamed patches"
-    bash $BUILD_ROOT/patch.sh $BUILD_ROOT unnamed
-    echo
+    # echo "--> Applying unnamed patches"
+    # bash $BUILD_ROOT/patch.sh $BUILD_ROOT unnamed
+    # echo
 
     echo "--> Generating makefiles"
     cd device/phh/treble
