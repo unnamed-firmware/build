@@ -1,11 +1,11 @@
 {
-  "version": "v2025.07.15",
-  "date": "1752522720",
+  "version": "v2025.07.16",
+  "date": "1752605973",
   "variants": [
     {
       "name": "treble_arm64_bvN",
-      "size": "858652772",
-      "url": "https://github.com/unnamed-firmware/build/releases/download/v2025.07.15/aosp-arm64-ab-vanilla-15.0-20250715.img.xz"
+      "size": "858653724",
+      "url": "https://github.com/unnamed-firmware/build/releases/download/v2025.07.16/aosp-arm64-ab-vanilla-15.0-20250716.img.xz"
     }
   ]
 }
