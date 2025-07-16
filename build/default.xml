@@ -14,7 +14,7 @@
   <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" remote="aosp" revision="bef5d37dda9360940964f097d612c8032e140961" clone-depth="1" />
 
   <project path="treble_adapter" name="ponces/treble_adapter" remote="github" revision="master" />
-  <project path="treble_app" name="TrebleDroid/treble_app" remote="github" revision="master" />
+  <project path="treble_app" name="unnamed-firmware/treble_app" remote="github" revision="master" />
 
   <project path="vendor/gapps" name="vendor_gapps" remote="azure" revision="android-15.0" clone-depth="1" />
   <project path="vendor/hardware_overlay" name="unnamed-firmware/vendor_hardware_overlay" remote="github" revision="pie" />

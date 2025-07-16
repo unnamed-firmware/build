@@ -2,6 +2,7 @@
 
 echo
 echo "AOSP 15.0 Buildbot - adapted from ponces' script by chardidathing"
+echo "For T9 devices"
 echo
 
 set -e
@@ -38,9 +39,9 @@ applyPatches() {
     bash $BUILD_ROOT/patch.sh $BUILD_ROOT personal
     echo
 
-    # echo "--> Applying unnamed patches"
-    # bash $BUILD_ROOT/patch.sh $BUILD_ROOT unnamed
-    # echo
+    echo "--> Applying unnamed T9 device patches"
+    bash $BUILD_ROOT/patch.sh $BUILD_ROOT unnamed_t9
+    echo
 
     echo "--> Generating makefiles"
     cd device/phh/treble
